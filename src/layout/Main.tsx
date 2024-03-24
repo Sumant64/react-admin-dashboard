@@ -1,6 +1,7 @@
 import React from 'react';
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "../theme";
+import { BrowserRouter } from "react-router-dom";
 
 
 const Main = (props: any) => {
@@ -8,12 +9,14 @@ const Main = (props: any) => {
 
     return (
         <>
-            <ColorModeContext.Provider value={colorMode}>
-                <ThemeProvider theme={theme}>
-                    <CssBaseline />
-                    {props.children}
-                </ThemeProvider>
-            </ColorModeContext.Provider>
+            <BrowserRouter>
+                <ColorModeContext.Provider value={colorMode}>
+                    <ThemeProvider theme={theme}>
+                        <CssBaseline />
+                        {props.children}
+                    </ThemeProvider>
+                </ColorModeContext.Provider>
+            </BrowserRouter>
         </>
     )
 }
