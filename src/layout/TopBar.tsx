@@ -61,7 +61,7 @@ const TopBar = (props: Props) => {
       </Dialog>
 
       {/* Appbar */}
-      <AppBar elevation={3} sx={{ backgroundColor: colors.primary[400] }}>
+      <AppBar elevation={3} sx={{ backgroundColor: 'inherit' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
           {/* SEARCH BAR */}
           <Box
@@ -72,7 +72,6 @@ const TopBar = (props: Props) => {
             sx={{
               backgroundColor: colors.primary[400],
               borderRadius: '3px',
-              border: '1px solid grey'
             }}
           >
             <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
@@ -84,16 +83,16 @@ const TopBar = (props: Props) => {
           <Box display='flex'>
             <IconButton sx={{ marginRight: '10px' }} onClick={colorMode.toggleColorMode}>
               {theme.palette.mode === "dark" ? (
-                <DarkModeOutlinedIcon sx={{ width: '30px', height: '30px' }} />
+                <DarkModeOutlinedIcon  />
               ) : (
-                <LightModeOutlinedIcon sx={{ width: '30px', height: '30px', color: '#fff' }} />
+                <LightModeOutlinedIcon />
               )}
             </IconButton>
-            <IconButton color="inherit" onClick={handleConfirmLogout} title="log out">
-              <InputIcon sx={{  height: '30px', width: '30px' }} />
+            <IconButton  onClick={handleConfirmLogout} title="log out">
+              <InputIcon  />
             </IconButton>
-            <IconButton sx={{ display: { xs: 'block', md: 'none' } }} color="inherit" onClick={handleMobileSidebar} title="log out">
-              <DehazeIcon sx={{  height: '30px', width: '30px' }} />
+            <IconButton onClick={handleMobileSidebar} title="log out">
+              <DehazeIcon  />
             </IconButton>
           </Box>
         </Toolbar>
