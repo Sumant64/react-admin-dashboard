@@ -38,7 +38,7 @@ const Form = () => {
         }) => (
           <form onSubmit={handleSubmit}>
             <Grid container spacing={2} columns={12}>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   variant='filled'
@@ -52,7 +52,7 @@ const Form = () => {
                   helperText={touched.firstName && errors.firstName}
                   />
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   variant='filled'
@@ -66,7 +66,7 @@ const Form = () => {
                   helperText={touched.lastName && errors.lastName}
                   />
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   variant='filled'
@@ -80,7 +80,7 @@ const Form = () => {
                   helperText={touched.email && errors.email}
                   />
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   variant='filled'
@@ -94,7 +94,7 @@ const Form = () => {
                   helperText={touched.contact && errors.contact}
                   />
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={12}>
                 <TextField
                   fullWidth
                   variant='filled'
@@ -108,7 +108,7 @@ const Form = () => {
                   helperText={touched.address1 && errors.address1}
                   />
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={12}>
                 <TextField
                   fullWidth
                   variant='filled'
