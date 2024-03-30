@@ -61,7 +61,7 @@ const TopBar = (props: Props) => {
       </Dialog>
 
       {/* Appbar */}
-      <AppBar elevation={3} sx={{ backgroundColor: 'inherit' }}>
+      <AppBar elevation={3} sx={{ backgroundColor: colors.grey[900] }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
           {/* SEARCH BAR */}
           <Box
