@@ -1,7 +1,7 @@
 import { Accordion, AccordionDetails, AccordionSummary, Box, Typography, useTheme } from '@mui/material'
 import React from 'react'
 import { tokens } from '../../theme';
-import Header from '../../components/common/Header';
+import Header from '../../components/Header';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const FAQ = () => {

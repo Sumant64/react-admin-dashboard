@@ -1,6 +1,6 @@
 import { Box, Typography, useTheme } from '@mui/material';
 import React from 'react'
-import { tokens } from '../../theme';
+import { tokens } from '../theme';
 
 interface Props {
     title: string;

@@ -6,7 +6,7 @@ import DehazeIcon from '@mui/icons-material/Dehaze';
 import CancelIcon from '@mui/icons-material/Cancel';
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import SubHeader from '../components/common/SubHeader';
+import SubHeader from '../components/SubHeader';
 import SearchIcon from "@mui/icons-material/Search";
 
 interface Props {
