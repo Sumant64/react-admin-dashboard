@@ -102,6 +102,7 @@ const SidebarComp = (props: Props) => {
         "& .css-dip3t8": {
           backgroundColor: "rgb(249, 249, 249, 0.95) !important",
         },
+        marginRight: '-10px',
         height: '93vh',
         width: '100%',
         overflowY: 'scroll',
