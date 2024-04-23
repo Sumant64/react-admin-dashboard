@@ -12,6 +12,7 @@ import LineChart from '../../components/LineChart';
 import ProgressCircle from '../../components/ProgressCircle';
 import BarChart from '../../components/BarChart';
 import { mockTransactions } from '../../data/mockData';
+import GeographyChart from '../../components/GeographyChart';
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -97,18 +98,18 @@ const Dashboard = () => {
 
       {/* Row 2 */}
       <Box
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        marginTop: '20px',
-        gap: '20px',
-      }}
+        sx={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          marginTop: '20px',
+          gap: '20px',
+        }}
       >
-      <Box
+        <Box
           sx={{
             flex: 2,
             backgroundColor: colors.primary[400],
-            display: {xs: 'none', md: 'block'}
+            display: { xs: 'none', md: 'block' }
           }}
         >
           <Box
@@ -194,7 +195,7 @@ const Dashboard = () => {
                 sx={{
                   backgroundColor: colors.greenAccent[500]
                 }}
-                
+
                 p="5px 10px"
                 borderRadius="4px"
               >
@@ -204,10 +205,85 @@ const Dashboard = () => {
           ))}
         </Box>
       </Box>
-     
+
 
       {/* Row 3 */}
-      
+      <Box
+        sx={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          marginTop: '20px',
+          gap: '20px',
+        }}
+      >
+        <Box
+          sx={{
+            flex: 1,
+            backgroundColor: colors.primary[400]
+          }}
+          p="30px"
+        >
+          <Typography variant='h5' fontWeight="600">
+            Campaign
+          </Typography>
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            mt="25px"
+          >
+            <ProgressCircle size="125" />
+            <Typography
+              variant="h5"
+              color={colors.greenAccent[500]}
+              sx={{ mt: "15px" }}
+            >
+              $48,352 revenue generated
+            </Typography>
+            <Typography>Includes extra misc expenditures and costs</Typography>
+          </Box>
+        </Box>
+
+        {/* Bar chart */}
+        <Box
+          sx={{
+            flex: 1,
+            backgroundColor: colors.primary[400],
+            minWidth: {xs: '300px'}
+          }}
+        >
+          <Typography
+            variant="h5"
+            fontWeight="600"
+            sx={{ padding: "30px 30px 0 30px" }}
+          >
+            Sales Quantity
+          </Typography>
+          <Box height="250px" mt="-20px">
+            <BarChart isDashboard={true} />
+          </Box>
+        </Box>
+
+        {/* Geography chart */}
+        <Box
+          sx={{
+            flex: 1,
+            backgroundColor: colors.primary[400]
+          }}
+        >
+          <Typography
+            variant="h5"
+            fontWeight="600"
+            sx={{ marginBottom: "15px" }}
+          >
+            Geography Based Traffic
+          </Typography>
+          <Box height="200px">
+            <GeographyChart isDashboard={true} />
+          </Box>
+        </Box>
+      </Box>
+
 
     </Box>
   )
