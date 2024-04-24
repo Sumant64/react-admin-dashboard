@@ -17,6 +17,7 @@ const Geography = () => {
         height="75vh"
         border={`1px solid ${colors.grey[100]}`}
         borderRadius="4px"
+        sx={{width: {xs: '1000px', md: '100%'}}}
       >
         <GeographyChart />
       </Box>
