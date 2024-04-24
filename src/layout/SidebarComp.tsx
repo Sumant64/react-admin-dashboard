@@ -31,13 +31,13 @@ const Item = (props: any) => {
       active={selected === title}
       style={{
         // color: colors.grey[100],
-        // color: `${selected === title ? "#666666" : "#141414"}`,
+        // color: `${selected === title ? colors.grey[600] : "#141414"}`,
       }}
       onClick={() => setSelected(title)}
       icon={icon}
       component={<Link to={to} />}
     >
-      <Typography style={{ color: selected === title ? colors.grey[900] : colors.grey[100] }}>{title}</Typography>
+      <Typography style={{ color: selected === title ? colors.grey[600] : colors.grey[100] }}>{title}</Typography>
     </MenuItem>
   );
 };
@@ -178,7 +178,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Dashboard"
                 to="/"
-                icon={<HomeOutlinedIcon sx={{ color: colors.grey[100] }} />}
+                icon={<HomeOutlinedIcon sx={{ color: colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -197,7 +197,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Manage Team"
                 to="/team"
-                icon={<PeopleOutlinedIcon sx={{ color: colors.grey[100] }} />}
+                icon={<PeopleOutlinedIcon sx={{ color: colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -207,7 +207,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Contacts Information"
                 to="/contacts"
-                icon={<ContactsOutlinedIcon sx={{ color: colors.grey[100] }} />}
+                icon={<ContactsOutlinedIcon sx={{ color: colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -217,7 +217,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Invoices Balances"
                 to="/invoices"
-                icon={<ReceiptOutlinedIcon sx={{ color: selected === 'Invoices Balances' ? colors.grey[900] : colors.grey[100] }} />}
+                icon={<ReceiptOutlinedIcon sx={{ color: colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -236,7 +236,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Profile Form"
                 to="/form"
-                icon={<PersonOutlinedIcon sx={{ color: colors.grey[100] }} />}
+                icon={<PersonOutlinedIcon sx={{ color: colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -245,7 +245,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Calendar"
                 to="/calendar"
-                icon={<CalendarTodayOutlinedIcon sx={{ color: selected === 'Invoices Balances' ? colors.grey[900] : colors.grey[100] }} />}
+                icon={<CalendarTodayOutlinedIcon sx={{ color: colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -254,7 +254,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="FAQ Page"
                 to="/faq"
-                icon={<HelpOutlineOutlinedIcon sx={{ color: selected === 'Invoices Balances' ? colors.grey[900] : colors.grey[100] }} />}
+                icon={<HelpOutlineOutlinedIcon sx={{ color:  colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -273,7 +273,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Bar Chart"
                 to="/bar"
-                icon={<BarChartOutlinedIcon sx={{ color: selected === 'Invoices Balances' ? colors.grey[900] : colors.grey[100] }} />}
+                icon={<BarChartOutlinedIcon sx={{ color: colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -283,7 +283,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Pie Chart"
                 to="/pie"
-                icon={<PieChartOutlineOutlinedIcon sx={{ color: selected === 'Invoices Balances' ? colors.grey[900] : colors.grey[100] }} />}
+                icon={<PieChartOutlineOutlinedIcon sx={{ color: colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -292,7 +292,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Line Chart"
                 to="/line"
-                icon={<TimelineOutlinedIcon sx={{ color: selected === 'Invoices Balances' ? colors.grey[900] : colors.grey[100] }} />}
+                icon={<TimelineOutlinedIcon sx={{ color: colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -301,7 +301,7 @@ const SidebarComp = (props: Props) => {
               <Item
                 title="Geography Chart"
                 to="/geography"
-                icon={<MapOutlinedIcon sx={{ color: selected === 'Invoices Balances' ? colors.grey[900] : colors.grey[100] }} />}
+                icon={<MapOutlinedIcon sx={{ color:  colors.grey[600] }} />}
                 selected={selected}
                 setSelected={setSelected}
               />
