@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# React Admin Dashboard
+React admin dashboard with typescript.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Setup
+- npm install
+- npm run start
 
-## Available Scripts
+# Key Features
+- Material UI implementation
+- Form generation with formik
+- Form validation with yup
+- Advanced & responsive sidebar with react-pro-sidebar
+- Charts: Bar, line, pie with nevo chart
+- Geography map implementation
+- Full responsive website
+- Dashboard section
+- Implementation of responsive calendar using @fullcalendar/react
+- Light mode and dark mode implementation with custom themes
 
-In the project directory, you can run:
 
-### `npm start`
+# Screenshots
+### Dashboard Web View:
+![Dashboard Web View](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/c58e8f9b-92ce-4d3e-b9bc-05b899fb3a1c)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Dark Mode:
+![dark mode](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/281de709-8eb4-4563-a27c-78ef8478d696)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Manage Teams:
+![manage teams](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/d88d7a59-7ca6-40e7-844c-0f5c7da874be)
 
-### `npm test`
+### Contact:
+![contact info](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/f07cd6d4-2ce4-41d1-904a-97fe1743c084)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Invoices:
+![Invoice](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/bcfa0c19-fa4c-4f6e-9a38-7ccccbb76d47)
 
-### `npm run build`
+### Profile:
+![profile form](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/5884c538-3fe9-477f-b047-3d7180782ad9)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Calendar:
+![calendar](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/e198a7d1-c6e7-4aef-a517-2737010f0e79)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Faq's:
+![faq page](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/9770db6c-4447-4a2e-b230-c6485b2bad9e)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Bar Chart:
+![bar chart](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/2e8f2233-3672-47ae-b171-a6d7986852bc)
 
-### `npm run eject`
+### Pie Chart:
+![pie chart](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/cae0c10e-2f74-45f7-a4c5-ba096ee6ffb3)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Line Chart:
+![line chart](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/a33eb35a-397d-4da4-b73d-46bddeaf5046)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Geography:
+![geography](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/aee83330-6e17-4bb2-914d-292347740715)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Mobile Responsive:
+![mobile view](https://github.com/Sumant64/react-admin-dashboard/assets/95896943/7e963f80-02d0-4970-996c-d7007f5adc2a)
