@@ -43,7 +43,7 @@ const Calendar = () => {
   return (
     <Box m="20px">
       <Header title='Calendar' subtitle='Full Calendar Interative Page' />
-      <Box display="flex" justifyContent="space-between">
+      <Box display="flex" justifyContent="space-between" sx={{flexWrap: {xs: 'wrap', md: 'nowrap'}}}>
         {/* Sidebar Sidebar */}
         <Box
           flex="1 1 20%"
